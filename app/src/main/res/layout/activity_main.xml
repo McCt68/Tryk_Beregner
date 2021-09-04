@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nzGreen"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/etTankNr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:hint="Tank Nummer."
+        android:inputType="number"
+        android:maxLength="2"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etStartTemp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="6"
+        android:gravity="center_horizontal"
+        android:hint="Start Temp."
+        android:textSize="24sp"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/etStartTryk"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTankNr" />
+
+    <EditText
+        android:id="@+id/etStartTryk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="6"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:hint="Start Tryk."
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/etStartTemp"
+        app:layout_constraintTop_toBottomOf="@+id/etTankNr" />
+
+    <EditText
+        android:id="@+id/etSlutTemp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="6"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:hint="Slut Temp."
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/etSlutTryk"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etStartTemp" />
+
+    <EditText
+        android:id="@+id/etSlutTryk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="6"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:hint="Slut Tryk."
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/etSlutTemp"
+        app:layout_constraintTop_toBottomOf="@+id/etStartTryk" />
+
+    <Button
+        android:id="@+id/btnBeregn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/nzButton"
+        android:text="Beregn"
+        android:textColor="@color/white"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/tvResult"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSlutTemp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Resultat: "
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnBeregn"
+        app:layout_constraintTop_toBottomOf="@+id/etSlutTryk" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
