@@ -15,11 +15,12 @@ class MainActivity : AppCompatActivity() {
             val trykKonstantSlut = etSlutTryk.text.toString().toDouble() / (etSlutTemp.text.toString().toDouble() +273)
             var resultat = trykKonstantSlut * 100 / trykKonstantStart
 
-            tvResult.text = resultat.toString()
+            var roundedResultat = String.format("%.3f", resultat) // rounds to 3 decimal places
+            tvResult.text = roundedResultat.toString()
         }
 
 
-
+//
         /*Dette virker
         btnBeregn.setOnClickListener{
             var test_1 = etStartTemp.text.toString().toDouble()
