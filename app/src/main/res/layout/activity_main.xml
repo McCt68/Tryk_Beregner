@@ -13,11 +13,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:ems="10"
+        android:ems="8"
         android:textSize="24sp"
         android:gravity="center_horizontal"
         android:hint="Tank Nummer."
         android:inputType="number"
+
+        android:imeOptions="actionNext"
         android:maxLength="2"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,6 +36,7 @@
         android:hint="Start Temp."
         android:textSize="24sp"
         android:inputType="numberDecimal"
+        android:imeOptions="actionDone"
         android:maxLength="4"
         android:maxLines="1"
         android:textAlignment="center"
@@ -118,6 +121,15 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnBeregn"
         app:layout_constraintTop_toBottomOf="@+id/etSlutTryk" />
+
+    <Button
+        android:id="@+id/btnLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Kun for nørder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBeregn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,7 +19,10 @@ class MainActivity : AppCompatActivity() {
             tvResult.text = roundedResultat.toString()
         }
 
+btnLink.setOnClickListener {
+    // make a link to explanation
 
+}
 //
         /*Dette virker
         btnBeregn.setOnClickListener{
