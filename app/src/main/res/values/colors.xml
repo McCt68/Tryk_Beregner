@@ -10,4 +10,5 @@
     <color name="nzGreen">#C5DA00</color>
     <color name="nzBlue">#2596BE</color>
     <color name="nzButton">#2196F3</color>
+    <color name="myStatusBar">#2196F3</color>
 </resources>

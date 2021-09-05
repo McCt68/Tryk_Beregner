@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
 btnLink.setOnClickListener {
     // make a link to explanation
-    val data = Uri.parse("google.com")
+    val data = Uri.parse("https://nbi.ku.dk/spoerg_om_fysik/fysik/gaslove/")
     val defaultBrowser =
         Intent.makeMainSelectorActivity(Intent.ACTION_MAIN, Intent.CATEGORY_APP_BROWSER)
     defaultBrowser.setData(data)
