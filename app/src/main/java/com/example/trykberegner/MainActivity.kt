@@ -1,8 +1,11 @@
 package com.example.trykberegner
 
+ import android.content.Intent
+ import android.net.Uri
+ import android.os.Bundle
  import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
  import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,16 +24,13 @@ class MainActivity : AppCompatActivity() {
 
 btnLink.setOnClickListener {
     // make a link to explanation
+    val data = Uri.parse("google.com")
+    val defaultBrowser =
+        Intent.makeMainSelectorActivity(Intent.ACTION_MAIN, Intent.CATEGORY_APP_BROWSER)
+    defaultBrowser.setData(data)
+    startActivity(defaultBrowser)
 
 }
-//
-        /*Dette virker
-        btnBeregn.setOnClickListener{
-            var test_1 = etStartTemp.text.toString().toDouble()
-            var test_2 = etStartTryk.text.toString().toDouble()
-            var result = test_1 + test_2
-            tvResult.text = result.toString()
-        }
-    */
+
     }
 }
