@@ -22,6 +22,19 @@ class MainActivity : AppCompatActivity() {
             tvResult.text = roundedResultat.toString()
         }
 
+        // TODO
+        // New UI with 2 tanks
+        // Toast with msg for user when he press Beregn
+        // Make save function
+        // Make load function that loads last saved data when app is started
+
+        // I am second branch
+
+        fun testBranch(){
+            //test
+        }
+
+        /** Not using this for now
 btnLink.setOnClickListener {
     // make a link to explanation
     val data = Uri.parse("https://nbi.ku.dk/spoerg_om_fysik/fysik/gaslove/")
@@ -31,6 +44,7 @@ btnLink.setOnClickListener {
     startActivity(defaultBrowser)
 
 }
+        **/
 
     }
 }
