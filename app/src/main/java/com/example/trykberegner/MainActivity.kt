@@ -23,28 +23,28 @@ class MainActivity : AppCompatActivity() {
         }
 
         // TODO
+        // I am second branch
         // New UI with 2 tanks
         // Toast with msg for user when he press Beregn
         // Make save function
         // Make load function that loads last saved data when app is started
 
-        // I am second branch
 
-        fun testBranch(){
-            //test
-        }
-
-        /** Not using this for now
-btnLink.setOnClickListener {
-    // make a link to explanation
-    val data = Uri.parse("https://nbi.ku.dk/spoerg_om_fysik/fysik/gaslove/")
-    val defaultBrowser =
-        Intent.makeMainSelectorActivity(Intent.ACTION_MAIN, Intent.CATEGORY_APP_BROWSER)
-    defaultBrowser.setData(data)
-    startActivity(defaultBrowser)
-
-}
-        **/
-
+//        Homework
+//
+//        see video 14
+//
+//        Trykberegner app
+//
+//                Use viewModels
+//
+//                Så den ikke ødelægger view når man vender til landscape mode
+//
+//
+//        Husk dependencies in gradle og buildfeatures daabinding in gradle
+//
+//        Make viewModel class with function to call from main
+//
+//        in main use databinding
     }
 }
